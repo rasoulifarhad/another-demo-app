@@ -8,6 +8,7 @@ import { CopyrightDirective } from './copyright.directive';
 import { NumericDirective } from './numeric.directive';
 import { PermissionDirective } from './permission.directive';
 import { KeyLoggerComponent } from './key-logger/key-logger.component';
+import { AuthModule } from "./auth/auth.module";
 
 @NgModule({
     declarations: [
@@ -22,7 +23,8 @@ import { KeyLoggerComponent } from './key-logger/key-logger.component';
     imports: [
         BrowserModule,
         AppRoutingModule,
-        ProductsModule
+        ProductsModule,
+        AuthModule
     ]
 })
 export class AppModule { }

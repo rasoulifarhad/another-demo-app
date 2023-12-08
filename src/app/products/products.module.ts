@@ -6,6 +6,7 @@ import { ProductHostDirective } from './product-host.directive';
 import { SortPipe } from './sort.pipe';
 import { ProductViewComponent } from './product-view/product-view.component';
 import { FavoritesComponent } from './favorites/favorites.component';
+import { ProductCreateComponent } from './product-create/product-create.component';
 
 
 
@@ -16,7 +17,8 @@ import { FavoritesComponent } from './favorites/favorites.component';
     ProductHostDirective,
     SortPipe,
     ProductViewComponent,
-    FavoritesComponent
+    FavoritesComponent,
+    ProductCreateComponent
   ],
   imports: [
     CommonModule
