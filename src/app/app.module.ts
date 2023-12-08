@@ -14,6 +14,7 @@ import { PageNotFoundComponent } from './page-not-found/page-not-found.component
 import { CartComponent } from './cart/cart.component';
 import { CrisisListComponent } from './crisis-list/crisis-list.component';
 import { HeroesModule } from './heroes/heroes.module';
+import { MessagesComponent } from './messages/messages.component';
 
 @NgModule({
     declarations: [
@@ -25,6 +26,7 @@ import { HeroesModule } from './heroes/heroes.module';
         PageNotFoundComponent,
         CartComponent,
         CrisisListComponent,
+        MessagesComponent,
     ],
     providers: [],
     bootstrap: [AppComponent],

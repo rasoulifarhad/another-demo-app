@@ -33,3 +33,4 @@ See https://stackblitz.com/angular/lmgmmarpvdrb?file=src%2Fapp%2Fhero-detail%2Fh
 See https://stackblitz.com/angular/argbonpbgrv?file=src%2Fapp%2Fapp-routing.module.ts
 See https://docs.angular.lat/guide/singleton-services#forRoot-router
 See https://www.concretepage.com/angular/angular-functional-route-guards
+See https://stackblitz.com/angular/argbonpbgrv?file=src%2Fapp%2Fheroes%2Fhero-list%2Fhero-list.component.ts
