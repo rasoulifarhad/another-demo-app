@@ -7,6 +7,7 @@ import { SortPipe } from './sort.pipe';
 import { ProductViewComponent } from './product-view/product-view.component';
 import { FavoritesComponent } from './favorites/favorites.component';
 import { ProductCreateComponent } from './product-create/product-create.component';
+import { ProductsRoutingModule } from './products-routing.module';
 
 
 
@@ -21,7 +22,8 @@ import { ProductCreateComponent } from './product-create/product-create.componen
     ProductCreateComponent
   ],
   imports: [
-    CommonModule
+    CommonModule,
+    ProductsRoutingModule
   ],
   exports: [
     ProductListComponent

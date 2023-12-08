@@ -1,7 +1,11 @@
 <app-auth></app-auth>
-<span>{{title}} app is running</span>
+<!-- <span>{{title}} app is running</span>
 <div>
   <app-key-logger></app-key-logger>
 </div>
 <app-product-list></app-product-list>
-<p appCopyright></p>
+<p appCopyright></p> -->
+<a routerLink="/products" routerLinkActive="active">Products</a>
+<a routerLink="/cart" routerLinkActive="active">Cart</a>
+<a routerLink="/about" routerLinkActive="active">About</a>
+<router-outlet></router-outlet>
