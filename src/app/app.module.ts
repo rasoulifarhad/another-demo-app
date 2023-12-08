@@ -9,6 +9,7 @@ import { NumericDirective } from './numeric.directive';
 import { PermissionDirective } from './permission.directive';
 import { KeyLoggerComponent } from './key-logger/key-logger.component';
 import { AuthModule } from "./auth/auth.module";
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
     declarations: [
@@ -23,6 +24,7 @@ import { AuthModule } from "./auth/auth.module";
     imports: [
         BrowserModule,
         AppRoutingModule,
+        HttpClientModule,
         ProductsModule,
         AuthModule
     ]
