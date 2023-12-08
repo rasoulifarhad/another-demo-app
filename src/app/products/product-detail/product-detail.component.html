@@ -1,7 +1,7 @@
 <div *ngIf="product">
   <h2>Product Detail</h2>
   <h3>{{product.name}}</h3>
-  <span>{{product.priice | currency:'EUR'}}</span>
+  <span>{{product.price | currency:'EUR'}}</span>
   <div [ngSwitch]="product.name">
     <p *ngSwitchCase="'Webcam'">
       Productis used for video

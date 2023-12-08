@@ -8,13 +8,13 @@ import { Observable, take } from 'rxjs';
 })
 export class FavoritesService extends ProductsService {
 
-  constructor() {
-    super();
-  }
+  // constructor() {
+  //   super();
+  // }
 
-  override getProducts() : Observable<Product[]> {
-      return super.getProducts().pipe(
-        take(3)
-      );
-  }
+  // override getProducts() : Observable<Product[]> {
+  //     return super.getProducts().pipe(
+  //       take(3)
+  //     );
+  // }
 }
