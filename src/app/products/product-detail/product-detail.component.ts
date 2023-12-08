@@ -20,7 +20,7 @@ export class ProductDetailComponent implements OnInit, OnChanges {
 
   constructor(
     private productsService: ProductsService,
-    private authService: AuthService,
+    public authService: AuthService,
     private route: ActivatedRoute
   ) {}
 
