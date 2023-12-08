@@ -17,6 +17,8 @@ export class ProductListComponent implements OnDestroy, OnInit, AfterViewInit {
   products$: Observable<Product[]> | undefined;
   private productsSub: Subscription | undefined;
 
+  products: Product[] = [];
+
   constructor(private productService: ProductsService) {}
 
   ngOnInit(): void {
@@ -37,7 +39,19 @@ export class ProductListComponent implements OnDestroy, OnInit, AfterViewInit {
     window.alert(`you just bought ${this.selectedProduct?.name}!`);
   }
 
+  onAdd(product: Product) {
+    this.products.push(product);
+  }
+
+  onDelete() {
+    this.products = this.products.filter(product => product !== this.selectedProduct);
+    this.selectedProduct = undefined;
+  }
+
   private getProducts() {
     this.products$ = this.productService.getProducts();
+    this.products$.subscribe( products => {
+      this.products = products;
+    })
   }
 }
