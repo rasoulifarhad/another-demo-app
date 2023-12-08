@@ -25,3 +25,11 @@ Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To u
 ## Further help
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+
+
+See https://docs.angular.lat/guide/router-tutorial-toh
+See https://github.com/PacktPublishing/Learning-Angular-Fourth-Edition/tree/main
+See https://stackblitz.com/angular/lmgmmarpvdrb?file=src%2Fapp%2Fhero-detail%2Fhero-detail.component.ts
+See https://stackblitz.com/angular/argbonpbgrv?file=src%2Fapp%2Fapp-routing.module.ts
+See https://docs.angular.lat/guide/singleton-services#forRoot-router
+See https://www.concretepage.com/angular/angular-functional-route-guards

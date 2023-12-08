@@ -9,7 +9,7 @@ export class AuthService {
 
   private token = '';
 
-  get isLoggedIn() { return this.token !== '';}
+  public isLoggedIn() { return this.token !== '';}
 
   constructor(private http: HttpClient) { }
 

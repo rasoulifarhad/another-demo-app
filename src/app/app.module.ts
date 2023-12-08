@@ -12,6 +12,8 @@ import { AuthModule } from "./auth/auth.module";
 import { HttpClientModule } from '@angular/common/http';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
 import { CartComponent } from './cart/cart.component';
+import { CrisisListComponent } from './crisis-list/crisis-list.component';
+import { HeroesModule } from './heroes/heroes.module';
 
 @NgModule({
     declarations: [
@@ -21,16 +23,18 @@ import { CartComponent } from './cart/cart.component';
         PermissionDirective,
         KeyLoggerComponent,
         PageNotFoundComponent,
-        CartComponent
+        CartComponent,
+        CrisisListComponent,
     ],
     providers: [],
     bootstrap: [AppComponent],
     imports: [
         BrowserModule,
-        AppRoutingModule,
-        HttpClientModule,
         ProductsModule,
-        AuthModule
+        AuthModule,
+        HeroesModule,
+        HttpClientModule,
+        AppRoutingModule,
     ]
 })
 export class AppModule { }
