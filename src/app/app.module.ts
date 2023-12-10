@@ -4,6 +4,7 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { ReactiveFormsModule } from '@angular/forms';
 import { CartComponent } from './cart/cart.component';
 import { ProductsModule } from "./products/products.module";
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
@@ -31,6 +32,7 @@ import { KeyLoggerComponent } from './key-logger/key-logger.component';
         ProductsModule,
         AppRoutingModule,
         HttpClientModule,
+        ReactiveFormsModule,
         AuthModule,
     ]
 })
