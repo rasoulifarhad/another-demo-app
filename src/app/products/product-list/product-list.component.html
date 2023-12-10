@@ -27,4 +27,4 @@
     <a [routerLink]="['/products', product.id]">{{product.name}}</a>
   </li>
 </ul>
-<app-product-create></app-product-create>
+<app-product-create (added)="onAdd($event)"></app-product-create>
