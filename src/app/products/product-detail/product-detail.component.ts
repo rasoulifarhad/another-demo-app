@@ -4,6 +4,7 @@ import { Observable, of, switchMap } from 'rxjs';
 import { ProductsService } from '../products.service';
 import { AuthService } from 'src/app/auth/auth.service';
 import { ActivatedRoute } from '@angular/router';
+import { CartService } from 'src/app/cart/cart.service';
 
 @Component({
   selector: 'app-product-detail',
@@ -17,11 +18,13 @@ export class ProductDetailComponent implements OnInit, OnChanges {
   @Output() deleted = new EventEmitter();
   @Input() id = -1;
   product$: Observable<Product> | undefined;
+  price: number | undefined;
 
   constructor(
     private productsService: ProductsService,
     public authService: AuthService,
-    private route: ActivatedRoute
+    private route: ActivatedRoute,
+    private cartService: CartService
   ) {}
 
   ngOnInit(): void {
@@ -41,14 +44,20 @@ export class ProductDetailComponent implements OnInit, OnChanges {
     this.product$  = this.productsService.getProduct(this.id);
   }
 
-  buy() {
-    this.bought.emit();
+  // buy() {
+  //   this.bought.emit();
+  // }
+
+  buy(product: Product) {
+    this.cartService.addProduct(product);
   }
 
-  changePrice(product: Product, price: number) {
-    this.productsService.updateProduct(product.id, price).subscribe(
-      () => {alert(`The price of ${product.name} was changed!`);}
-    );
+  changePrice(product: Product, price: number | undefined) {
+    if(price) {
+      this.productsService.updateProduct(product.id, price).subscribe(
+        () => {alert(`The price of ${product.name} was changed!`);}
+      );
+      }
   }
 
   remove(product: Product) {
