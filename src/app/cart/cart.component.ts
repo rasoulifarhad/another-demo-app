@@ -23,6 +23,7 @@ export class CartComponent implements OnInit {
   ngOnInit(): void {
 
     this.cart = this.cartService.cart;
+    console.log('Cart: ', this.cart);
     this.cart.forEach(() => {
       this.cartForm.controls.products.push(
         new FormControl(1, { nonNullable: true})
